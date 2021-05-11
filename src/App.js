@@ -56,8 +56,8 @@ class App extends React.Component {
           </Card.ImgOverlay>
           <Card.Footer style={{padding:'0'}}> <Footer /></Card.Footer>
         </Card>
-    </>
-  );
+      </>
+    );
   }
 }
 
