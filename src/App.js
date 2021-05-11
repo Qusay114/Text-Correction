@@ -48,7 +48,7 @@ class App extends React.Component {
             <Row style={{position:'absolute' , top:'25%' , left:'50%' , transform:'translate(-50%,-25%)'}}>
               <TextForm handleChange={this.handleChange} textConvertor={this.textConvertor} />
             </Row>
-            {this.state.showCard && 
+            {this.state.showCard &&
               <Row style={{position:'absolute' , top:'40%' , left:'50%' , transform:'translate(-50%,-25%)'}}>
                 <CorrectedText correctedText={this.state.correctedText} />
               </Row>
@@ -56,8 +56,8 @@ class App extends React.Component {
           </Card.ImgOverlay>
           <Card.Footer style={{padding:'0'}}> <Footer /></Card.Footer>
         </Card>
-      </>  
-    );
+    </>
+  );
   }
 }
 
