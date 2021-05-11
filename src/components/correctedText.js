@@ -27,15 +27,13 @@ class CorrectedText extends React.Component{
       copyButtonText:'copied!',
       hoverText:'text copied!',
     });
-    
   }
   handle = () => {window.addEventListener('click' , () => console.log('dfgvwert'));}
   render(){
     return(
       <Card bg='primary' className="text-center" style={{color:'white' , width:'30rem' , minHeight:'4rem'}}>
         <Card.Title Style={{ textAlign:'center'}}>
-          
-          <Button ref={this.copyButton} variant='outline-light' onClick={this.copyText}  onMouseEnter={()=> this.setState({show:true})} onMouseLeave={()=> this.setState({show:false})} style={{position:'absolute' , left:'100%' , transform:'translateX(-100%)' , top:'0'}}>{this.state.copyButtonText}</Button>        
+          <Button ref={this.copyButton} variant='outline-light' onClick={this.copyText} onMouseEnter={()=> this.setState({show:true})} onMouseLeave={()=> this.setState({show:false})} style={{position:'absolute' , left:'100%' , transform:'translateX(-100%)' , top:'0'}}>{this.state.copyButtonText}</Button>        
           <Overlay target={this.state.button} show={this.state.show} placement='right'>
             {(props) => (
               <Tooltip id="overlay-example" {...props}>

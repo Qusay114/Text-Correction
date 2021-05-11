@@ -39,15 +39,14 @@ class App extends React.Component {
   }
 
   handleChange = (event) => this.setState({userText:event.target.value});
-  
   render(){
-    return(   
+    return(
       <>
         <Card className="bg-dark text-white">
-          <Card.Img src={bg} alt=''  />
+          <Card.Img src={bg} alt=''/>
           <Card.ImgOverlay>
             <Row style={{position:'absolute' , top:'25%' , left:'50%' , transform:'translate(-50%,-25%)'}}>
-              <TextForm  handleChange = {this.handleChange} textConvertor = {this.textConvertor} />
+              <TextForm handleChange={this.handleChange} textConvertor={this.textConvertor} />
             </Row>
             {this.state.showCard && 
               <Row style={{position:'absolute' , top:'40%' , left:'50%' , transform:'translate(-50%,-25%)'}}>
@@ -57,9 +56,7 @@ class App extends React.Component {
           </Card.ImgOverlay>
           <Card.Footer style={{padding:'0'}}> <Footer /></Card.Footer>
         </Card>
-     
-      </>
-      
+      </>  
     );
   }
 }

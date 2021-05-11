@@ -1,6 +1,6 @@
 import React from 'react';
 
-//bootstrap elements 
+//bootstrap elements
 import Card from 'react-bootstrap/Card';
 // import Row from 'react-bootstrap/Row';
 
@@ -8,7 +8,6 @@ class Footer extends React.Component{
 
   render(){
     return(
-    
       <Card style={{ color:'black' , width:'100%' , textAlign:'center'}}>
         <Card.Header>
            About US
@@ -20,7 +19,6 @@ class Footer extends React.Component{
           &copy;By eng.Qusay Al-Amarat
         </Card.Footer>
       </Card>
-   
     );
   }
 }
